@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <title>Buying a cinema ticket</title>
+    <link href="https://fonts.googleapis.com/css?family=Gelasio&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: Girassol;
+            font-size: 14px;
+        }
+
+        .container {
+            width: 400px;
+            margin: 50px auto 50px auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 4px;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .textInput {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 5px 10px 5px 10px;
+            outline: none;
+        }
+
+        .textInput:focus {
+            border-color: black;
+        }
+
+        button {
+            width: 100%;
+            height: 30px;
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" method="POST">
+            <fieldset>
+                <legend>Contact details</legend>
+            <label for="firstName">First name</label>
+            <input class="textInput" id="firstName" name="firstName" type="text" placeholder="First name" />
+
+            <label for="lastName">Last name</label>
+            <input class="textInput" id="lastName" name="lastName" type="text" placeholder="Last name" />
+
+            <label for="email">Email</label>
+            <input class="textInput" id="email" name="email" type="email" placeholder="Email" />
+
+            <label for="phone">Phone</label>
+            <input class="textInput" id="phone" name="phone" type="tel" placeholder="Phone"
+                maxlength="15" />
+            </fieldset>
+
+            <fieldset>
+                <legend>Choose a movie</legend>
+            <label for="country">
+                <select class="textInput" id="movies" name="chose a movie">
+                    <option value="" disabled selected>Choose a movie</option>
+                    <option value="godzilla">Godzilla</option>
+                    <option value="alladin">Alladin</option>
+                    <option value="avengers">Avengers</option>
+                    <option value="joker">Joker</option>
+                    <option value="rocketman">Rocketman</option>
+                    <option value="spider-man">Spider-Man</option>
+                </select>
+            </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Choose location</legend>
+            <label>Location</label>
+            <select name="chooselocation">
+                <option value="cinema city-iulius mall">Cinema City-Iulius Mall</option>
+                <option value="cinema city-Vivo">Cinema City-Vivo</option>
+            </select>
+            </fieldset>
+
+        <fieldset>
+            <legend>Terms and conditions</legend>
+            <label> <input type="radio" value="acceptTerms" name="acceptTerms" />AcceptTerms </label>
+        </fieldset>
+
+        <button>Submit</button>
+    
+        </form>
+    </div>
+</body>
+</html>
